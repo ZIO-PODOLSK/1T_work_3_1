@@ -1,0 +1,407 @@
+/* super-main */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+
+/* header */
+
+
+.logo-left {
+    width: 48px;
+    height: 46px;
+}
+
+.logo-left {
+    width: 38px;
+    height: 33px;
+}
+
+.header {
+    max-width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+}
+
+
+.container-content {
+    background-image: url("img/header-background.png");
+    background-position: center;
+    margin-bottom: 46px;
+    background-size: auto;
+    margin: 0 auto;
+}
+
+.header-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 107px;
+    height: 48px;
+    max-width: 1366px;
+}
+
+.header_main_content {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 553px;
+    background-image: url('img/header-ameba.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.header_items {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.header_items_img {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.header_content {
+    font-size: 16px;
+    max-width: 425px;
+    color: #1F3F68;
+    ;
+}
+
+.main-title {
+    color: #1F3F68;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+}
+
+.btn {
+    background-color: #356EAD;
+    width: 236px;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: .5s;
+
+}
+
+.btn:hover {
+    background-color: #5f8aba;
+    color: rgb(255, 121, 121);
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.btn-caption {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.about__more {
+    text-decoration: none;
+}
+
+
+/* main */
+
+.about-main {
+    display: flex;
+    justify-content: center;
+}
+
+.help {
+    text-align: center;
+    max-width: 1336px;
+}
+
+.cards {
+    display: flex;
+    /* position: relative; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.help_title {
+    font-size: 36px;
+    margin-bottom: 36px;
+    text-align: center;
+    /* max-width: 1336px; */
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+.card__item {
+    box-shadow: 5px 20px 50px #5A98D0;
+    border: 1px solid rgb(203, 200, 200);
+    width: 430px;
+    height: 494px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px;
+    justify-content: space-around;
+    text-align: justify;
+    transition: .5s;
+}
+
+.card__item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    border-color: #5A98D0;
+}
+
+.card__img {
+    align-self: center;
+    padding-bottom: 40px;
+}
+
+.about__caption {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.about__text {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.about__item>img {
+    padding: 45px;
+}
+
+.about__more {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.about__link {
+    color: blue;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.our_project_slider {
+    position: relative;
+}
+
+.slider {
+    height: auto;
+    max-width: 100%;
+}
+
+.our_project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    max-width: 1336px;
+}
+
+.our_progect_subtitle {
+    max-width: 898px;
+    font-size: 16px;
+    margin-bottom: 36px;
+    align-self: center;
+}
+
+.our_project_caption {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.main_project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.slider_title {
+    width: 100%;
+    transition: .6s;
+    transition-duration: 1s;
+}
+
+.main_project_slider_1 {
+    position: relative;
+}
+
+.main_project_slider_2 {
+    position: relative;
+}
+
+.main_project_slider_2:hover {
+    animation-name: kotik;
+    animation-duration: 3s;
+}
+
+.main_project_slider_1:hover {
+    background-image: url(img/kotik.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main_project_caption {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+
+/* footer */
+
+footer {
+    background-color: #316099;
+    margin-bottom: 46px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.footer-feedback {
+    display: flex;
+    height: 390px;
+    border-bottom: 1px solid rgb(227, 217, 217);
+    max-width: 1336px;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-contacts {
+    height: 265px;
+    max-width: 1336px;
+    align-self: center;
+}
+
+.feedback-caption {
+    font-size: 36px;
+    color: white;
+}
+
+.footer-down {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 1336px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.feedback-subtitle {
+    max-width: 495px;
+    font-size: 16px;
+    color: white;
+    padding-top: 30px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    color: white;
+    font-size: 16px;
+    max-width: 350px;
+}
+
+.footer-link {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-link:hover {
+    color: red;
+    /* padding-left: 50px; */
+}
+
+/* anime */
+@keyframes kotik {
+    10% {
+        background-image: url(img/kotik.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/* MEDIA */
+
+/* tabletka */
+
+@media(max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_project {
+        flex-wrap: wrap;
+    }
+
+    .main_project_slider_1 {
+        margin: 30px;
+    }
+
+    .main_project_slider_2 {
+        margin: 30px;
+    }
+}
+
+/* mobile */
+
+@media(max-width: 375px) {
+    .header_items_img {
+        display: none;
+    }
+
+    .header_main_content {
+        background: none;
+    }
+
+    .main_project {
+        flex-wrap: wrap;
+    }
+
+    .main_project_slider_1 {
+        margin: 30px;
+    }
+
+    .main_project_slider_2 {
+        margin: 30px;
+    }
+}
